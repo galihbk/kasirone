@@ -84,32 +84,32 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="" class="stretched-link">Pengelolaan Stok</a></h4>
+              <p>Kelola stok produk Anda dengan mudah dan efisien menggunakan KasirOne.id.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="" class="stretched-link">Pembayaran Online</a></h4>
+              <p>Terima pembayaran online dengan berbagai metode pembayaran yang tersedia.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="" class="stretched-link">Laporan Keuangan</a></h4>
+              <p>Temukan laporan keuangan yang akurat dan real-time untuk membantu Anda mengambil keputusan bisnis.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="" class="stretched-link">Dukungan 24/7</a></h4>
+              <p>Nikmati dukungan pelanggan 24/7 untuk membantu Anda dalam menggunakan KasirOne.id.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -121,17 +121,13 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Tentang KasirOne.id</h2>
-        <p></p>
+        <h2>Menjadi Bagian dari KasirOne.id</h2>
+        <p>Temukan cerita di balik KasirOne.id dan bagaimana kami berkomitmen untuk membantu bisnis Anda tumbuh.</p>
       </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up">
-
         <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-
           <div class="col-lg-5">
             <div class="about-img">
               <img src="assets/img/about-portrait.jpg" class="img-fluid" alt="">
@@ -139,49 +135,31 @@
           </div>
 
           <div class="col-lg-7">
-
-            <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
               <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Tentang KasirOne.id</a></li>
               <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Visi Kami</a></li>
               <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Misi Kami</a></li>
-            </ul><!-- End Tabs -->
-
-            <!-- Tab Content -->
+            </ul>
             <div class="tab-content">
-
               <div class="tab-pane fade show active" id="about-tab1">
-
-                <p class="fst-italic">KasirOne adalah solusi Point of Sale (POS) berbasis web yang dirancang khusus untuk membantu UMKM, toko kelontong, minimarket, hingga pelaku bisnis ritel dalam mengelola transaksi, stok, dan laporan usaha dengan lebih cepat, mudah, dan efisien.
-
-                    Kami percaya bahwa setiap pelaku usaha berhak mendapatkan teknologi yang memudahkan, tanpa harus mahal atau rumit digunakan. Dengan KasirOne, Anda bisa fokus pada pengembangan usaha — urusan pencatatan kami yang bantu.</p>
-
-
+                <p class="fst-italic">KasirOne.id adalah solusi Point of Sale (POS) berbasis web yang dirancang khusus untuk membantu UMKM, toko kelontong, minimarket, hingga pelaku bisnis ritel dalam mengelola transaksi, stok, dan laporan usaha dengan lebih cepat, mudah, dan efisien.
+                    Kami percaya bahwa setiap pelaku usaha berhak mendapatkan teknologi yang memudahkan, tanpa harus mahal atau rumit digunakan. Dengan KasirOne.id, Anda bisa fokus pada pengembangan usaha — urusan pencatatan kami yang bantu.</p>
               </div><!-- End Tab 1 Content -->
-
               <div class="tab-pane fade" id="about-tab2">
-
                 <p class="fst-italic">Menjadi platform kasir digital terbaik dan terpercaya bagi pelaku usaha kecil dan menengah di Indonesia.</p>
-
-
               </div><!-- End Tab 2 Content -->
-
               <div class="tab-pane fade" id="about-tab3">
-
                 <p class="fst-italic">KasirOne.id memiliki misi diantaranya yaitu.</p>
-
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
                   <h4>Memberikan layanan aplikasi kasir yang mudah digunakan dan terjangkau.</h4>
                 </div>
                 <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
-
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
                   <h4>Membantu pelaku usaha mengelola stok dan keuangan secara lebih tertata.</h4>
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
                   <h4>Menyediakan laporan bisnis yang real-time dan informatif.</h4>
@@ -192,17 +170,11 @@
                   <h4>Terus mengembangkan fitur-fitur yang sesuai dengan kebutuhan pengguna.</h4>
                 </div>
                 <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
               </div><!-- End Tab 3 Content -->
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /About Section -->
 
     <!-- Clients Section -->
@@ -280,7 +252,7 @@
             <div class="content d-flex flex-column justify-content-center h-100">
               <h3>Untuk Siapa KasirOne?</h3>
               <p class="fst-italic">
-                KasirOne cocok digunakan oleh:
+                KasirOne cocok digunakan untuk:
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> Toko Kelontong</li>
@@ -357,18 +329,15 @@
               <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                 <h3>Modinest</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Temukan keunikan dan kenyamanan dalam pengelolaan bisnis Anda dengan Modinest.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pengelolaan stok yang efisien.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Laporan keuangan yang akurat.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dukungan 24/7.</li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Dapatkan pengalaman pengelolaan bisnis yang lebih baik dengan Modinest.
                 </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -382,9 +351,7 @@
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Undaesenti</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Temukan kemudahan dalam pengelolaan stok dan transaksi bisnis Anda dengan Undaesenti.
                 </p>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -393,7 +360,6 @@
                 <ul>
                   <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
                   <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                 </ul>
               </div>
@@ -757,8 +723,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Temukan Harga Paket yang Sesuai untuk Bisnis Anda</h2>
+        <p>Temukan harga yang sesuai untuk meningkatkan bisnis Anda dengan paket yang kami tawarkan.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -769,20 +735,21 @@
             <div class="pricing-item">
 
               <div class="pricing-header">
-                <h3>Free Plan</h3>
-                <h4><sup>$</sup>0<span> / month</span></h4>
+                <h3>Gratis</h3>
+                <h4><sup>Rp. </sup>0<span> / Bulan</span></h4>
               </div>
 
               <ul>
-                <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-dot"></i> <span>Produk Max 20</span></li>
+                <li><i class="bi bi-dot"></i> <span>1 Pengguna</span></li>
+                <li><i class="bi bi-dot"></i> <span>Dukungan Email</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Custom Struk</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Export Excell</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Keuangan</span></li>
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Buy Now</a>
+                <a href="#" class="buy-btn">Beli Sekarang</a>
               </div>
 
             </div>
@@ -790,22 +757,21 @@
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="pricing-item featured">
-
               <div class="pricing-header">
-                <h3>Business Plan</h3>
-                <h4><sup>$</sup>29<span> / month</span></h4>
+                <h3>Basic</h3>
+                <h4><sup>Rp. </sup>100.000<span> / Bulan</span></h4>
               </div>
-
               <ul>
-                <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-dot"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-dot"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-dot"></i> <span>Produk Max 500</span></li>
+                <li><i class="bi bi-dot"></i> <span>3 Pengguna</span></li>
+                <li><i class="bi bi-dot"></i> <span>Dukungan Email + WhatsApp</span></li>
+                <li><i class="bi bi-dot"></i> <span>Keuangan Sederhana</span></li>
+                <li><i class="bi bi-dot"></i> <span>Export Excell</span></li>
+                <li><i class="bi bi-dot"></i> <span>Custom Struk + Logo</span></li>
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Buy Now</a>
+                <a href="#" class="buy-btn">Beli Sekarang</a>
               </div>
 
             </div>
@@ -815,20 +781,21 @@
             <div class="pricing-item">
 
               <div class="pricing-header">
-                <h3>Developer Plan</h3>
-                <h4><sup>$</sup>49<span> / month</span></h4>
+                <h3>Pro</h3>
+                <h4><sup>Rp. </sup>249.000<span> / Bulan</span></h4>
               </div>
 
               <ul>
-                <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-dot"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-dot"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-dot"></i> <span>Unlimited Produk</span></li>
+                <li><i class="bi bi-dot"></i> <span>Unlimited Pengguna</span></li>
+                <li><i class="bi bi-dot"></i> <span>Dukungan Prioritas + Zoom</span></li>
+                <li><i class="bi bi-dot"></i> <span>Keuangan Lengkap + Pajak</span></li>
+                <li><i class="bi bi-dot"></i> <span>Export Excell</span></li>
+                <li><i class="bi bi-dot"></i> <span>Custom Struk + Logo + Cetak PDF</span></li>
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Buy Now</a>
+                <a href="#" class="buy-btn">Beli Sekarang</a>
               </div>
 
             </div>
@@ -850,9 +817,9 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <h3><strong>Pertanyaan yang Sering Ditanyakan</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Kami telah mengumpulkan beberapa pertanyaan yang sering ditanyakan dan jawaban untuk membantu Anda memahami produk dan layanan kami lebih baik.
               </p>
             </div>
 
@@ -860,27 +827,27 @@
 
               <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>Bagaimana cara menggunakan KasirOne?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Untuk menggunakan KasirOne, Anda hanya perlu mendaftar dan mengaktifkan akun Anda. Setelah itu, Anda dapat mengakses dashboard dan mulai menggunakan fitur-fitur yang tersedia.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3>Apakah KasirOne aman untuk digunakan?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Ya, KasirOne sangat aman untuk digunakan. Kami menggunakan teknologi keamanan terbaru untuk melindungi data Anda dan memastikan bahwa transaksi Anda berlangsung dengan aman.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>Bagaimana cara menghubungi tim dukungan KasirOne?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Anda dapat menghubungi tim dukungan KasirOne melalui email atau nomor telepon yang tertera di situs web kami. Kami siap membantu Anda 24/7.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
