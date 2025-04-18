@@ -33,6 +33,7 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
+            'gender' => 'required',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'business_name' => 'required|string|max:255',
         ], [
@@ -41,6 +42,7 @@ class RegisteredUserController extends Controller
             'email.email' => 'Format email tidak valid.',
             'email.unique' => 'Email sudah digunakan.',
             'password.required' => 'Password wajib diisi.',
+            'gender.required' => 'Pilih jenis kelamin.',
             'password.confirmed' => 'Konfirmasi password tidak cocok.',
             'business_name.required' => 'Nama bisnis wajib diisi.',
         ]);
@@ -52,6 +54,7 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'gender' => $request->gender,
             'password' => Hash::make($request->password),
             'business_id' => $business->id,
         ]);

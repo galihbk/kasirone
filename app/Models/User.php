@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Notifications\CustomVerifyEmail;
 use App\Models\Business;
+use App\Models\Role;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -23,6 +24,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $fillable = [
         'name',
         'email',
+        'gender',
         'password',
         'business_id',
     ];
@@ -56,5 +58,9 @@ class User extends Authenticatable implements MustVerifyEmail
     public function business()
     {
         return $this->belongsTo(Business::class);
+    }
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
     }
 }

@@ -31,7 +31,7 @@
                             <select type="text" class="form-control" placeholder="081xxxxxxxx">
                                 <option value="">--pilih--</option>
                                 <option value="kasir">Kasir</option>
-                                <option value="manager">manager</option>
+                                <option value="manager">Manager</option>
                             </select>
                         </div>
                         <div class="mb-3 col-md-6">

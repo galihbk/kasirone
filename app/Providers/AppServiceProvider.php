@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Http\Middleware\CheckMenuAccess;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,5 +21,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        app()->make('router')->aliasMiddleware('menu.access', CheckMenuAccess::class);
     }
 }

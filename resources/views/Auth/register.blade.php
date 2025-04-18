@@ -1,4 +1,3 @@
-
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -9,28 +8,41 @@
             </div>
             <form method="POST" action="{{ route('register') }}">
                 @csrf
-                <div class="mb-4">
-                    <x-input-label for="name" :value="__('Nama Lengkap')" />
-                    <x-text-input id="name" class="form-control form-control" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-                    <x-input-error :messages="$errors->get('name')" class="mt-2" style="color: red" />
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <x-input-label for="name" :value="__('Nama Lengkap')" />
+                        <x-text-input id="name" class="form-control" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                        <x-input-error :messages="$errors->get('name')" class="mt-2" style="color: red" />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <x-input-label for="name" :value="__('Jenis Kelamin')" />
+                        <select id="gender" class="form-control" name="gender" :value="old('gender')" required autofocus>
+                            <option value="">--pilih--</option>
+                            <option value="L">Laki-Laki</option>
+                            <option value="P">Perempuan</option>
+                        </select>
+                        <x-input-error :messages="$errors->get('gender')" class="mt-2" style="color: red" />
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <x-input-label for="name" :value="__('Nama Usaha/Bisnis')" />
-                    <x-text-input id="business_name" class="form-control form-control" type="text" name="business_name" :value="old('business_name')" required autofocus autocomplete="bussines_name" />
-                    <x-input-error :messages="$errors->get('business_name')" class="mt-2" style="color: red" />
-                </div>
-                <div class="mb-4">
-                    <x-input-label for="email" :value="__('Email')" />
-                    <x-text-input id="email" class="form-control form-control" type="email" name="email" :value="old('email')" required autofocus autocomplete="email" />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" style="color: red" />
+                <div class="row">
+                    <div class="mb-3 col-lg-6">
+                        <x-input-label for="name" :value="__('Nama Usaha/Bisnis')" />
+                        <x-text-input id="business_name" class="form-control" type="text" name="business_name" :value="old('business_name')" required autofocus autocomplete="bussines_name" />
+                        <x-input-error :messages="$errors->get('business_name')" class="mt-2" style="color: red" />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <x-input-label for="email" :value="__('Email')" />
+                        <x-text-input id="email" class="form-control" type="email" name="email" :value="old('email')" required autofocus autocomplete="email" />
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" style="color: red" />
+                    </div>
                 </div>
                 <div class="mb-4 position-relative">
                     <x-input-label for="password" :value="__('Kata Sandi')" class="mb-1 text-dark" />
-                    <x-text-input type="password" id="dlab-password2" class="form-control" type="password" name="password" required   autocomplete="new-password" />
-                            <span class="show-pass eye" id="show-pass2">
-                                <i class="fa fa-eye-slash"></i>
-                                <i class="fa fa-eye"></i>
-                            </span>
+                    <x-text-input type="password" id="dlab-password2" class="form-control" type="password" name="password" required autocomplete="new-password" />
+                    <span class="show-pass eye" id="show-pass2">
+                        <i class="fa fa-eye-slash"></i>
+                        <i class="fa fa-eye"></i>
+                    </span>
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
                 <div class="mb-4 position-relative">
@@ -50,7 +62,7 @@
                         <a class="btn-link text-primary0" href="{{ route('password.request') }}">
                             {{ __('Lupa kata sandi?') }}
                         </a>
-                    @endif
+                        @endif
                     </div>
                 </div>
                 <div class="text-center mb-4">
@@ -59,7 +71,7 @@
                     </x-primary-button>
                 </div>
                 <h6 class="login-title"><span>Or continue with</span></h6>
-                
+
                 <div class="mb-3">
                     <ul class="d-flex align-self-center justify-content-center">
                         <li><a target="_blank" href="https://www.facebook.com/" class="fab fa-facebook-f btn-facebook"></a></li>
@@ -68,7 +80,7 @@
                         <li><a target="_blank" href="https://twitter.com/" class="fab fa-twitter btn-twitter"></a></li>
                     </ul>
                 </div>
-                <p class="text-center">Sudah punya akun?  
+                <p class="text-center">Sudah punya akun?
                     <a class="btn-link text-primary" href="{{url('login')}}">Masuk disini</a>
                 </p>
             </form>
@@ -78,7 +90,7 @@
         <div class="pages-left h-100">
             <div class="login-content">
                 <a href="index.html"><img src="{{ url('assets') }}/img/logo-text-right.png" width="30%" class="mb-3" alt=""></a>
-                
+
                 <p>Your true value is determined by how much more you give in value than you take in payment. ...</p>
             </div>
             <div class="login-media text-center">
