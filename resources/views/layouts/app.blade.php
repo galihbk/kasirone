@@ -20,6 +20,7 @@
     <link href="{{url('assets-admin')}}/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Style css -->
     <link href="{{ url('assets-admin') }}/css/style.css" rel="stylesheet">
+    <link href="{{ url('/assets/') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="{{url('assets-admin')}}/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
 
 </head>

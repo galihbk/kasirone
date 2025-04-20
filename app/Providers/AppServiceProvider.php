@@ -22,5 +22,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         app()->make('router')->aliasMiddleware('menu.access', CheckMenuAccess::class);
+        \Midtrans\Config::$serverKey = config('midtrans.server_key');
+        \Midtrans\Config::$isProduction = config('midtrans.is_production');
+        \Midtrans\Config::$isSanitized = true;
+        \Midtrans\Config::$is3ds = true;
     }
 }
