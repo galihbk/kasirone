@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,29 +51,72 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      {{-- <a class="btn-getstarted" href="{{url('register')}}">Daftar Sekarang</a> --}}
 
     </div>
   </header>
 
   <main class="main">
     <div class="container p-3">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="card">
-                    <div class="card-body">
-                        
-                    </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center">Pilih Metode Pembayaran</h5>
+              <hr>
+              <div class="row">
+                <div class="col-xl-3 col-xxl-3 col-sm-6">
+                  <div class="card px-3 py-2">
+                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
+                  </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        
-                    </div>
+                <div class="col-xl-3 col-xxl-3 col-sm-6">
+                  <div class="card px-3 py-2">
+                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
+                  </div>
                 </div>
+                <div class="col-xl-3 col-xxl-3 col-sm-6">
+                  <div class="card px-3 py-2">
+                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
+                  </div>
+                </div>
+                <div class="col-xl-3 col-xxl-3 col-sm-6">
+                  <div class="card px-3 py-2">
+                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center">Ringkasan Pesanan</h5>
+              <hr>
+              <p class="text-center">Nomor Tagihan: xxxxx</p>
+              <div class="d-flex justify-content-evenly">
+                <div class="text-start col-lg-6">
+                  <p>Pesanan 1</p>
+                  <p>Biaya admin</p>
+                </div>
+                <div class="text-end col-lg-6">
+                  <p>Rp. 2.500</p>
+                  <p>Rp. 2.500</p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-evenly">
+                <div class="text-start col-lg-6">
+                  <h6>Total</h6>
+                </div>
+                <div class="text-end col-lg-6">
+                  <h4>Rp. 5.000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
