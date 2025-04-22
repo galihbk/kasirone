@@ -28,11 +28,7 @@
                         @endforeach
                     </ul>
                     <div class="text-center mt-auto">
-                        <form action="{{ route('subscription.create') }}" method="post">
-                          @csrf
-                          <input type="hidden" name="price" value="{{ $plan->price }}">
-                          <button type="submit" class="buy-btn">Beli Sekarang</button>
-                        </form>
+                          <a href="{{ route('subscription.payment-method').'/'.$plan->id }}" class="buy-btn">Beli Sekarang</a>
                       </div>
                   </div>
                 </div>

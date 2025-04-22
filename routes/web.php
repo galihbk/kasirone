@@ -34,6 +34,7 @@ Route::middleware(['auth', 'menu.access'])->group(function () {
 });
 Route::middleware(['auth'])->group(function () {
     Route::get('/subscription', [SubscriptionController::class, 'showPlans'])->name('subscription.plans');
+    Route::get('/payment-method/{plan}', [SubscriptionController::class, 'paymentMethod'])->name('subscription.payment-method');
     Route::post('/subscription/create', [SubscriptionController::class, 'createInvoice'])->name('subscription.create');
 });
 Route::middleware('auth')->group(function () {

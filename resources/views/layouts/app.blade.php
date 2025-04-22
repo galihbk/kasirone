@@ -134,7 +134,7 @@
                     // Ambil menu induk (yang parent_id null) berdasarkan menu_id
                     $menus = Menu::whereIn('id', $menuIds)
                     ->whereNull('parent_id')
-                    ->orderBy('id')
+                    ->orderBy('order', 'ASC')
                     ->get();
                     @endphp
                     @foreach ($menus as $menu)
@@ -148,7 +148,7 @@
                             @php
                             $submenus = Menu::whereIn('id', $menuIds)
                             ->where('parent_id', $menu->id)
-                            ->orderBy('id')
+                            ->orderBy('order')
                             ->get();
                             @endphp
                             @foreach ($submenus as $submenu)

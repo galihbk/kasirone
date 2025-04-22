@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{{ url('/assets/') }}/img/favicon.png" rel="icon">
-  <link href="{{ url('/assets/') }}/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ url('assets') }}/img/favicon.png" rel="icon">
+  <link href="{{ url('assets') }}/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ url('/assets/') }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{ url('/assets/') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="{{ url('/assets/') }}/vendor/aos/aos.css" rel="stylesheet">
-  <link href="{{ url('/assets/') }}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="{{ url('/assets/') }}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="{{ url('/assets/') }}/css/main.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/css/main.css" rel="stylesheet">
 
 </head>
 
@@ -63,27 +63,73 @@
             <div class="card-body">
               <h5 class="text-center">Pilih Metode Pembayaran</h5>
               <hr>
-              <div class="row">
-                <div class="col-xl-3 col-xxl-3 col-sm-6">
-                  <div class="card px-3 py-2">
-                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
-                  </div>
+              <div class="row justify-content-center">
+                <div class="col-xl-4 col-xxl-4 col-sm-6 mb-3">
+                  <form action="{{route('subscription.create')}}" method="post" class="w-100">
+                    @csrf
+                    <input type="hidden" name="bank" value="bri">
+                    <input type="hidden" name="id_package" value="{{$plan->id}}">
+                    <input type="hidden" name="order_id" value="{{$orderId}}">
+                    <button type="submit" class="p-0 border-0 bg-transparent w-100">
+                        <div class="card p-2 text-center">
+                            <img src="{{ url('assets-admin') }}/images/bank/BRI.webp" alt="BRI" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                        </div>
+                    </button>
+                </form>
                 </div>
-                <div class="col-xl-3 col-xxl-3 col-sm-6">
-                  <div class="card px-3 py-2">
-                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
-                  </div>
+                <div class="col-xl-4 col-xxl-4 col-sm-6 mb-3">
+                <form action="{{route('subscription.create')}}" method="post" class="w-100">
+                  @csrf
+                  <input type="hidden" name="bank" value="gopay">
+                    <input type="hidden" name="id_package" value="{{$plan->id}}">
+                    <input type="hidden" name="order_id" value="{{$orderId}}">
+                  <button type="submit" class="p-0 border-0 bg-transparent w-100">
+                      <div class="card p-2 text-center">
+                          <img src="{{ url('assets-admin') }}/images/bank/gopay.png" alt="GOPAY" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                      </div>
+                  </button>
+              </form>
                 </div>
-                <div class="col-xl-3 col-xxl-3 col-sm-6">
-                  <div class="card px-3 py-2">
-                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
-                  </div>
+                <div class="col-xl-4 col-xxl-4 col-sm-6 mb-3">
+                <form action="{{route('subscription.create')}}" method="post" class="w-100">
+                  @csrf
+                  <input type="hidden" name="bank" value="bni">
+                    <input type="hidden" name="id_package" value="{{$plan->id}}">
+                    <input type="hidden" name="order_id" value="{{$orderId}}">
+                  <button type="submit" class="p-0 border-0 bg-transparent w-100">
+                      <div class="card p-2 text-center">
+                          <img src="{{ url('assets-admin') }}/images/bank/BNI.webp" alt="BNI" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                      </div>
+                  </button>
+              </form>
                 </div>
-                <div class="col-xl-3 col-xxl-3 col-sm-6">
-                  <div class="card px-3 py-2">
-                    <img src="{{url('assets-admin')}}/images/bank/BRI.webp" alt="">
-                  </div>
+                <div class="col-xl-4 col-xxl-4 col-sm-6 mb-3">
+                <form action="{{route('subscription.create')}}" method="post" class="w-100">
+                  @csrf
+                  <input type="hidden" name="bank" value="mandiri">
+                    <input type="hidden" name="id_package" value="{{$plan->id}}">
+                    <input type="hidden" name="order_id" value="{{$orderId}}">
+                  <button type="submit" class="p-0 border-0 bg-transparent w-100">
+                      <div class="card p-2 text-center">
+                          <img src="{{ url('assets-admin') }}/images/bank/MANDIRI.webp" alt="MANDIRI" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                      </div>
+                  </button>
+              </form>
                 </div>
+                <div class="col-xl-4 col-xxl-4 col-sm-6 mb-3">
+                  <form action="{{route('subscription.create')}}" method="post" class="w-100">
+                    @csrf
+                    <input type="hidden" name="bank" value="qris">
+                    <input type="hidden" name="id_package" value="{{$plan->id}}">
+                    <input type="hidden" name="order_id" value="{{$orderId}}">
+                    <button type="submit" class="p-0 border-0 bg-transparent w-100">
+                        <div class="card p-2 text-center">
+                            <img src="{{ url('assets-admin') }}/images/bank/QRIS.webp" alt="QRIS" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                        </div>
+                    </button>
+                </form>
+                
+                                </div>
               </div>
             </div>
           </div>
@@ -93,24 +139,24 @@
             <div class="card-body">
               <h5 class="text-center">Ringkasan Pesanan</h5>
               <hr>
-              <p class="text-center">Nomor Tagihan: xxxxx</p>
+              <p class="text-center">Id Order: {{$orderId}}</p>
               <div class="d-flex justify-content-evenly">
                 <div class="text-start col-lg-6">
-                  <p>Pesanan 1</p>
+                  <p>Paket {{$plan->name}}</p>
                   <p>Biaya admin</p>
                 </div>
                 <div class="text-end col-lg-6">
-                  <p>Rp. 2.500</p>
+                  <p>Rp. {{ number_format($plan->price, 0, ',', '.') }}</p>
                   <p>Rp. 2.500</p>
                 </div>
               </div>
               <hr>
               <div class="d-flex justify-content-evenly">
                 <div class="text-start col-lg-6">
-                  <h6>Total</h6>
+                  <h4>Total</h4>
                 </div>
                 <div class="text-end col-lg-6">
-                  <h4>Rp. 5.000</h4>
+                  <h4>Rp. {{ number_format($plan->price+2500, 0, ',', '.') }}</h4>
                 </div>
               </div>
             </div>
@@ -125,16 +171,16 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="{{ url('assets') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url('assets') }}/vendor/php-email-form/validate.js"></script>
+  <script src="{{ url('assets') }}/vendor/aos/aos.js"></script>
+  <script src="{{ url('assets') }}/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="{{ url('assets') }}/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{ url('assets') }}/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ url('assets') }}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ url('assets') }}/js/main.js"></script>
 
 </body>
 
