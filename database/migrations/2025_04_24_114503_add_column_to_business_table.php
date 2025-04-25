@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('menus', function (Blueprint $table) {
-            // Menambahkan kolom has_submenu dengan tipe boolean
-            $table->boolean('has_submenu')->default(false); // false jika tidak ada submenu, true jika ada
+        Schema::table('businesses', function (Blueprint $table) {
+            $table->string('category_business')->nullable();
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
         });
     }
 
@@ -22,8 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('menus', function (Blueprint $table) {
-            $table->dropColumn('has_submenu');
+        Schema::table('businesses', function (Blueprint $table) {
+            $table->dropColumn(['category_business', 'phone', 'address']);
         });
     }
 };

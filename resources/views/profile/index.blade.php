@@ -48,6 +48,8 @@
                         <div class="tab-content">
                             <div id="my-data" class="tab-pane fade active show" role="tabpanel">
                                 <div class="my-post-content pt-3">
+                                    <form action="">
+                                        @csrf
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Email</label>
@@ -76,10 +78,13 @@
                                             <textarea type="text" class="form-control" >{{Auth::user()->alamat}}</textarea>
                                         </div>
                                     </div>
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </form>
                                 </div>
                             </div>
                             <div id="bisnisUsaha" class="tab-pane fade" role="tabpanel">
                                 <div class="my-post-content pt-3">
+                                    <form action="">
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Nama Bisnis/Usaha</label>
@@ -108,6 +113,7 @@
                                             <textarea type="text" class="form-control" >{{Auth::user()->alamat}}</textarea>
                                         </div>
                                     </div>
+                                </form>
                                 </div>
                             </div>
                             <div id="password" class="tab-pane fade" role="tabpanel">

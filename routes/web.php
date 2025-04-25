@@ -6,8 +6,11 @@ use App\Http\Controllers\RolesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\CashierController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\MidtransWebhookController;
+
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -30,7 +33,12 @@ Route::middleware(['auth', 'menu.access'])->group(function () {
     Route::get('/users/form-add', [UsersController::class, 'formAddUser'])->name('users.form-add');
     Route::get('/roles', [RolesController::class, 'index'])->name('roles');
 
-    //Langganan
+    //Kasir
+    Route::get('/cashier', [CashierController::class, 'index'])->name('cashier');
+
+    //Produk
+    Route::get('/product', [ProductController::class, 'index'])->name('product');
+    Route::get('/product-category', [ProductController::class, 'productCategory'])->name('product.category');
 });
 Route::middleware(['auth'])->group(function () {
     Route::get('/subscription', [SubscriptionController::class, 'showPlans'])->name('subscription.plans');
