@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Business;
+use App\Models\Role;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -51,14 +53,30 @@ class RegisteredUserController extends Controller
         $business = Business::create([
             'name' => $request->business_name,
         ]);
+        $role = Role::create([
+            'business_id' => $business->id,
+            'rolename' => 'Super Admin',
+        ]);
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'gender' => $request->gender,
             'password' => Hash::make($request->password),
             'business_id' => $business->id,
+            'role_id' => $role->id,
         ]);
-
+        $menus = DB::table('menus')->pluck('id');
+        $roleMenusData = [];
+        foreach ($menus as $menuId) {
+            $roleMenusData[] = [
+                'role_id' => $role->id,
+                'menu_id' => $menuId,
+                'can_access' => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+        DB::table('role_menu')->insert($roleMenusData);
         event(new Registered($user));
 
         Auth::login($user);

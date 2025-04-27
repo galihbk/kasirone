@@ -13,7 +13,7 @@ return new class extends Migration
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('business_id')->constrained('businesses')->onDelete('cascade'); // Role milik business tertentu
-            $table->string('name'); // Nama role: Admin, Kasir, Manager
+            $table->string('rolename')->nullable(); // Nama role: Admin, Kasir, Manager
             $table->timestamps();
         });
     }

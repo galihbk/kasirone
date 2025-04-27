@@ -10,7 +10,7 @@ use App\Http\Controllers\CashierController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\MidtransWebhookController;
-
+use App\Models\Product;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -41,6 +41,17 @@ Route::middleware(['auth', 'menu.access'])->group(function () {
     Route::get('/product-category', [ProductController::class, 'productCategory'])->name('product.category');
 });
 Route::middleware(['auth'])->group(function () {
+    //Produk
+    Route::get('/get-data-product', [ProductController::class, 'getDataProduct'])->name('product.get-data-product');
+    Route::post('/add-category', [ProductController::class, 'addDataCategory'])->name('product.add-category');
+    Route::post('/add-product', [ProductController::class, 'addDataProduct'])->name('product.add-product');
+    Route::get('/get-data-category', [ProductController::class, 'getDataCategory'])->name('product.get-data-category');
+    Route::delete('/delete-dategory/{id}', [ProductController::class, 'destroyCategory'])->name('product.delete-category');
+    Route::delete('/delete-product/{id}', [ProductController::class, 'destroyProduct'])->name('product.delete-product');
+    Route::post('/product/update-category', [ProductController::class, 'updateCategory'])->name('product.update-category');
+    Route::post('/product/update-product', [ProductController::class, 'updateProduct'])->name('product.update-product');
+
+
     Route::get('/subscription', [SubscriptionController::class, 'showPlans'])->name('subscription.plans');
     Route::get('/payment-method/{plan}', [SubscriptionController::class, 'paymentMethod'])->name('subscription.payment-method');
     Route::post('/subscription/create', [SubscriptionController::class, 'createInvoice'])->name('subscription.create');

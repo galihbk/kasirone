@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('phone')->nullable();
             $table->text('alamat')->nullable();
-            $table->string('role')->default('admin');
+            $table->integer('role_id')->nullable();
             $table->boolean('status_aktif')->default(true);
             $table->string('foto')->nullable();
             $table->string('who_added')->nullable();
